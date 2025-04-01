@@ -9,7 +9,7 @@ A modern, production-ready starter kit for building SaaS applications with Next.
 
 ## Live Demo 🌐
 
-[![Demo](https://img.shields.io/badge/Demo-https://saas-dashboard-starter.vercel.app-9cf)](https://saas-dashboard-starter.vercel.app/)
+[https://saas-dashboard-starter.vercel.app/](https://saas-dashboard-starter.vercel.app/)
 
 ## Features 🚀
 
