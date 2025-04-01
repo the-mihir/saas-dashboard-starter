@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Next.js SaaS Dashboard Starter Kit 🚀
 
-## Project info
+A modern, production-ready starter kit for building SaaS applications with Next.js 14 and TypeScript.
 
-**URL**: https://lovable.dev/projects/d26e2d1e-56d6-4e59-ba09-815ea5dd6154
+[![GitHub stars](https://img.shields.io/github/stars/the-mihir/saas-dashboard-starter?style=social)](https://github.com/the-mihir/saas-dashboard-starter)
+[![GitHub forks](https://img.shields.io/github/forks/the-mihir/saas-dashboard-starter?style=social)](https://github.com/the-mihir/saas-dashboard-starter)
 
-## How can I edit this code?
+## Features 🚀
 
-There are several ways of editing your application.
+- 🎨 **Modern UI Components**: Built with ShadCN UI and Magic UI for beautiful, customizable components
+- 🔐 **Authentication**: Secure user authentication with NextAuth.js
+- 💫 **Light Mode**: Clean, modern design with light theme support
+- 📱 **Responsive Design**: Fully responsive layout that works on all devices
+- ⚡ **Performance Optimized**: Built with Next.js 14 for optimal performance
+- 🎯 **TypeScript**: Full TypeScript support for type safety
+- 🎨 **Tailwind CSS**: Styling with Tailwind CSS for consistent design
 
-**Use Lovable**
+## Tech Stack 🛠️
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d26e2d1e-56d6-4e59-ba09-815ea5dd6154) and start prompting.
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **UI Components**: ShadCN UI, Magic UI
+- **Authentication**: NextAuth.js
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started 🚀
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+1. Clone the repository:
+```bash
+git clone https://github.com/the-mihir/saas-dashboard-starter.git
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```bash
+npm install
+# or
+pnpm install
+# or
+bun install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Set up environment variables:
+Create a `.env.local` file in the root directory with your environment variables.
 
-**Use GitHub Codespaces**
+4. Run the development server:
+```bash
+npm run dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## What technologies are used for this project?
+## Project Structure 📁
 
-This project is built with .
+```
+src/
+├── app/              # Next.js app directory
+├── components/       # Reusable components
+├── lib/             # Utility functions and configurations
+└── types/           # TypeScript type definitions
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Contributing 🤝
 
-## How can I deploy this project?
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Simply open [Lovable](https://lovable.dev/projects/d26e2d1e-56d6-4e59-ba09-815ea5dd6154) and click on Share -> Publish.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## License 📄
 
-Yes it is!
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Support 🙏
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+If you find this project useful, please give it a ⭐️ star on GitHub!
+
+## Author 👨‍💻
+
+Created by [The Mihir](https://github.com/the-mihir)
+
+---
+
+Made with ❤️ by [The Mihir](https://github.com/the-mihir)
