@@ -5,6 +5,12 @@ A modern, production-ready starter kit for building SaaS applications with Next.
 [![GitHub stars](https://img.shields.io/github/stars/the-mihir/saas-dashboard-starter?style=social)](https://github.com/the-mihir/saas-dashboard-starter)
 [![GitHub forks](https://img.shields.io/github/forks/the-mihir/saas-dashboard-starter?style=social)](https://github.com/the-mihir/saas-dashboard-starter)
 
+
+
+## Live Demo 🌐
+
+[![Demo](https://img.shields.io/badge/Demo-https://saas-dashboard-starter.vercel.app-9cf)](https://saas-dashboard-starter.vercel.app/)
+
 ## Features 🚀
 
 - 🎨 **Modern UI Components**: Built with ShadCN UI and Magic UI for beautiful, customizable components
