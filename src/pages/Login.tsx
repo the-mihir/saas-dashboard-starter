@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
 import AuthLayout from '@/components/auth/AuthLayout';
+import { LogIn } from 'lucide-react';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -47,6 +48,30 @@ const Login = () => {
       toast({
         title: "Error",
         description: "Invalid email or password. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleDemoLogin = async () => {
+    try {
+      setIsLoading(true);
+      
+      // Simulate login API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      toast({
+        title: "Demo Account",
+        description: "Logged in with demo account successfully.",
+      });
+      
+      navigate('/dashboard');
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an error logging in with the demo account.",
         variant: "destructive",
       });
     } finally {
@@ -127,6 +152,16 @@ const Login = () => {
                     required
                   />
                 </div>
+                <Button 
+                  type="button" 
+                  variant="outline"
+                  className="w-full flex items-center justify-center gap-2"
+                  onClick={handleDemoLogin}
+                  disabled={isLoading}
+                >
+                  <LogIn size={16} />
+                  Use Demo Account
+                </Button>
               </CardContent>
               <CardFooter>
                 <Button 
