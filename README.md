@@ -15,6 +15,8 @@ A modern, production-ready starter kit for building SaaS applications with Next.
 - 🎯 **TypeScript**: Full TypeScript support for type safety
 - 🎨 **Tailwind CSS**: Styling with Tailwind CSS for consistent design
 
+
+
 ## Tech Stack 🛠️
 
 - **Framework**: Next.js 14
