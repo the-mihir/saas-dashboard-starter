@@ -21,15 +21,17 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <span className="text-xl font-bold text-blue-600">SaaS Kit</span>
+              <span className="text-2xl font-bold text-gray-600">DevKit</span>
             </Link>
+
+         
             <div className="hidden md:ml-10 md:block">
               <div className="flex items-baseline space-x-4">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-slate-600 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                    className="text-gray-600 hover:text-gray-500 px-3 py-2 text-md font-medium"
                   >
                     {item.name}
                   </a>
@@ -47,7 +49,7 @@ const Navbar = () => {
               </Button>
               <Button
                 onClick={() => navigate('/login')}
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-gray-600 hover:bg-gray-700"
               >
                 Get Started
               </Button>
@@ -55,7 +57,7 @@ const Navbar = () => {
           </div>
           <div className="md:hidden">
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-600 hover:text-blue-600"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-600 hover:text-gray-600"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -72,7 +74,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600"
+                className="block px-3 py-2 text-base font-medium text-slate-600 hover:text-gray-600"
               >
                 {item.name}
               </a>
@@ -87,7 +89,7 @@ const Navbar = () => {
               Login
             </Button>
             <Button
-              className="w-full justify-center bg-blue-600 hover:bg-blue-700"
+              className="w-full justify-center bg-gray-600 hover:bg-gray-700"
               onClick={() => navigate('/login')}
             >
               Get Started

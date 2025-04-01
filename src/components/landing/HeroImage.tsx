@@ -9,7 +9,7 @@ const HeroImage = () => {
           <div className="h-3 w-3 rounded-full bg-green-500" />
         </div>
         <div className="aspect-[4/3] bg-slate-50 rounded border border-slate-200 overflow-hidden">
-          <div className="h-10 bg-blue-600 flex items-center px-3">
+          <div className="h-10 bg-gray-600 flex items-center px-3">
             <div className="h-3 w-32 rounded-full bg-white opacity-50" />
           </div>
           <div className="p-3">
@@ -25,10 +25,10 @@ const HeroImage = () => {
                 <div className="bg-white shadow-sm border border-slate-200 rounded-md p-3">
                   <div className="flex justify-between mb-4">
                     <div className="h-3 w-20 bg-slate-200 rounded-full"></div>
-                    <div className="h-3 w-20 bg-blue-200 rounded-full"></div>
+                    <div className="h-3 w-20 bg-gray-200 rounded-full"></div>
                   </div>
-                  <div className="h-24 bg-blue-100 rounded-md flex items-center justify-center">
-                    <div className="h-12 w-full max-w-[80%] bg-blue-50 rounded-md border border-blue-200"></div>
+                  <div className="h-24 bg-gray-100 rounded-md flex items-center justify-center">
+                    <div className="h-12 w-full max-w-[80%] bg-gray-50 rounded-md border border-gray-200"></div>
                   </div>
                   <div className="mt-4 grid grid-cols-3 gap-2">
                     {[1, 2, 3].map((i) => (
@@ -41,7 +41,7 @@ const HeroImage = () => {
             <div className="mt-3 bg-white shadow-sm border border-slate-200 rounded-md p-3">
               <div className="flex justify-between items-center mb-3">
                 <div className="h-3 w-24 bg-slate-200 rounded-full"></div>
-                <div className="h-6 w-16 bg-blue-500 rounded"></div>
+                <div className="h-6 w-16 bg-gray-500 rounded"></div>
               </div>
               <div className="grid grid-cols-4 gap-2">
                 {[1, 2, 3, 4].map((i) => (

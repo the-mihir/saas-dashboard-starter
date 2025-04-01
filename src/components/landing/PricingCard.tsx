@@ -24,14 +24,14 @@ const PricingCard = ({
 }: PricingCardProps) => {
   return (
     <Card className={`border ${
-      featured ? 'border-blue-600 shadow-lg shadow-blue-100' : 'border-slate-200'
+      featured ? 'border-gray-600 shadow-lg shadow-gray-100' : 'border-slate-200'
     } relative overflow-hidden`}>
       {featured && (
-        <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
+        <div className="absolute top-0 right-0 bg-gray-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
           Most Popular
         </div>
       )}
-      <CardHeader className={`pb-6 ${featured ? 'bg-blue-50 border-b border-blue-100' : ''}`}>
+      <CardHeader className={`pb-6 ${featured ? 'bg-gray-50 border-b border-gray-100' : ''}`}>
         <CardTitle className="flex flex-col items-center">
           <span className="text-xl font-semibold mb-2">{title}</span>
           <div className="flex items-baseline">
@@ -52,7 +52,7 @@ const PricingCard = ({
         </ul>
         <Button 
           className={`w-full ${
-            featured ? 'bg-blue-600 hover:bg-blue-700' : ''
+            featured ? 'bg-gray-600 hover:bg-gray-700' : ''
           }`} 
           variant={featured ? 'default' : 'outline'}
           onClick={onButtonClick}

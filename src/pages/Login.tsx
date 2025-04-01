@@ -159,7 +159,7 @@ const Login = () => {
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <label htmlFor="password" className="text-sm font-medium">Password</label>
-                    <a href="#" className="text-sm text-blue-600 hover:text-blue-800">
+                    <a href="#" className="text-sm text-gray-600 hover:text-gray-800">
                       Forgot password?
                     </a>
                   </div>
@@ -194,7 +194,7 @@ const Login = () => {
               <CardFooter>
                 <Button 
                   type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  className="w-full bg-gray-600 hover:bg-gray-700"
                   disabled={isLoading}
                 >
                   {isLoading ? "Logging in..." : "Login"}
@@ -255,7 +255,7 @@ const Login = () => {
               <CardFooter>
                 <Button 
                   type="submit" 
-                  className="w-full bg-blue-600 hover:bg-blue-700"
+                  className="w-full bg-gray-600 hover:bg-gray-700"
                   disabled={isLoading}
                 >
                   {isLoading ? "Creating account..." : "Create Account"}

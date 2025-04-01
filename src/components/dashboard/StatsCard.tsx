@@ -29,7 +29,7 @@ const StatsCard = ({ title, value, change, trend, icon }: StatsCardProps) => {
     <Card>
       <CardHeader className="flex flex-row items-center justify-between pb-2">
         <CardTitle className="text-sm font-medium text-slate-500">{title}</CardTitle>
-        <div className="h-8 w-8 rounded-full bg-blue-50 flex items-center justify-center">
+        <div className="h-8 w-8 rounded-full bg-gray-50 flex items-center justify-center">
           {iconComponent(icon)}
         </div>
       </CardHeader>

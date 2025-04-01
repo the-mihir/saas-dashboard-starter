@@ -81,9 +81,10 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
         <Sidebar>
-          <SidebarHeader className="pt-6 px-6">
-            <a href="/" className="flex items-center">
-              <span className="text-xl font-bold text-sidebar-primary">SaaS Kit</span>
+          <SidebarHeader className="pt-6 px-6 border-b border-slate-200">
+            <a href="/" className="flex items-center gap-2">
+            <img src="https://placehold.co/400" alt="logo" className="w-10 h-10 rounded-full border border-slate-200" />
+              <span className="text-2xl font-bold text-sidebar-primary ">Dev Kit</span>
             </a>
           </SidebarHeader>
           

@@ -18,8 +18,8 @@ const FeatureCard = ({ title, description, icon }: FeatureCardProps) => {
   return (
     <Card className="border border-slate-200 hover:shadow-md transition-shadow">
       <CardContent className="pt-6">
-        <div className="h-12 w-12 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
-          {IconComponent && <IconComponent className="h-6 w-6 text-blue-600" />}
+        <div className="h-12 w-12 rounded-lg bg-gray-50 flex items-center justify-center mb-4">
+          {IconComponent && <IconComponent className="h-6 w-6 text-gray-600" />}
         </div>
         <h3 className="text-xl font-semibold mb-3 text-slate-900">{title}</h3>
         <p className="text-slate-600">{description}</p>

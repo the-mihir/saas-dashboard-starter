@@ -109,7 +109,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 onClick={handleStartTrial}
-                className="bg-blue-600 hover:bg-blue-700"
+                className="bg-gray-600 hover:bg-gray-700"
               >
                 Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -171,7 +171,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 md:px-12 bg-blue-50">
+      <section className="py-20 px-6 md:px-12 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">
             Ready to get started?
@@ -182,7 +182,7 @@ const Index = () => {
           <Button 
             size="lg" 
             onClick={handleStartTrial}
-            className="bg-blue-600 hover:bg-blue-700"
+            className="bg-gray-600 hover:bg-gray-700"
           >
             Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -193,13 +193,13 @@ const Index = () => {
       <footer className="py-12 px-6 md:px-12 border-t border-slate-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="font-semibold text-slate-900">SaaS Starter Kit</p>
-            <p className="text-sm text-slate-500">© 2023. All rights reserved.</p>
+            <p className="font-semibold text-slate-900">Dev Starter Kit</p>
+            <p className="text-sm text-slate-500">© 2025. Developed by 💖 <span> <a className='text-slate-600 hover:text-gray-600' target="_blank" href="https://github.com/the-mihir/">Mihir</a></span></p>
           </div>
           <div className="flex gap-8">
-            <a href="#" className="text-sm text-slate-600 hover:text-blue-600">Terms</a>
-            <a href="#" className="text-sm text-slate-600 hover:text-blue-600">Privacy</a>
-            <a href="#" className="text-sm text-slate-600 hover:text-blue-600">Contact</a>
+            <a href="#" className="text-sm text-slate-600 hover:text-gray-600">Terms</a>
+            <a href="#" className="text-sm text-slate-600 hover:text-gray-600">Privacy</a>
+            <a href="#" className="text-sm text-slate-600 hover:text-gray-600">Contact</a>
           </div>
         </div>
       </footer>

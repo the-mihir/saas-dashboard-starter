@@ -195,8 +195,8 @@ const Dashboard = () => {
               <div className="space-y-4">
                 {[1, 2, 3, 4, 5].map((item) => (
                   <div key={item} className="flex items-center gap-3 p-2 rounded-md hover:bg-slate-50">
-                    <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
-                      <span className="text-xs text-blue-700 font-medium">
+                    <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+                      <span className="text-xs text-gray-700 font-medium">
                         {['JD', 'AM', 'TK', 'LP', 'RW'][item - 1]}
                       </span>
                     </div>

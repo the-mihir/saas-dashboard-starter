@@ -12,7 +12,7 @@ const WelcomeBanner = () => {
   }
 
   return (
-    <Card className="bg-blue-50 border-blue-100">
+    <Card className="bg-gray-50 border-gray-100">
       <CardContent className="p-6">
         <div className="flex items-start justify-between">
           <div className="space-y-2">
@@ -22,7 +22,7 @@ const WelcomeBanner = () => {
               Need help? Check out our quick start guide.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              <Button variant="default" className="bg-blue-600 hover:bg-blue-700">
+              <Button variant="default" className="bg-gray-600 hover:bg-gray-700">
                 Complete Setup
               </Button>
               <Button variant="outline">
