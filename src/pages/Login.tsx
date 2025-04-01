@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -7,13 +7,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
 import AuthLayout from '@/components/auth/AuthLayout';
-import { LogIn } from 'lucide-react';
+import { LogIn, CheckCircle } from 'lucide-react';
 
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
+  const [demoButtonSuccess, setDemoButtonSuccess] = useState(false);
   
   const initialEmail = location.state?.email || '';
   const [loginForm, setLoginForm] = useState({
@@ -56,11 +57,20 @@ const Login = () => {
   };
 
   const handleDemoLogin = async () => {
+    // Fill the input fields with demo credentials
+    setLoginForm({
+      email: 'demo@example.com',
+      password: 'demo123',
+    });
+    
+    // Set success state for the button
+    setDemoButtonSuccess(true);
+    
     try {
       setIsLoading(true);
       
-      // Simulate login API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Simulate login API call with a bit longer delay to see the animation
+      await new Promise(resolve => setTimeout(resolve, 1500));
       
       toast({
         title: "Demo Account",
@@ -74,10 +84,18 @@ const Login = () => {
         description: "There was an error logging in with the demo account.",
         variant: "destructive",
       });
+      setDemoButtonSuccess(false);
     } finally {
       setIsLoading(false);
     }
   };
+
+  // Reset success state when form values change
+  useEffect(() => {
+    if (demoButtonSuccess) {
+      setDemoButtonSuccess(false);
+    }
+  }, [loginForm]);
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -135,6 +153,7 @@ const Login = () => {
                     value={loginForm.email}
                     onChange={(e) => setLoginForm({...loginForm, email: e.target.value})}
                     required
+                    className="transition-all duration-300 ease-in-out"
                   />
                 </div>
                 <div className="space-y-2">
@@ -150,17 +169,26 @@ const Login = () => {
                     value={loginForm.password}
                     onChange={(e) => setLoginForm({...loginForm, password: e.target.value})}
                     required
+                    className="transition-all duration-300 ease-in-out"
                   />
                 </div>
                 <Button 
                   type="button" 
                   variant="outline"
-                  className="w-full flex items-center justify-center gap-2"
+                  className={`w-full flex items-center justify-center gap-2 transition-all duration-300 ease-in-out animate-fade-in ${
+                    demoButtonSuccess 
+                      ? "bg-green-500 border-green-500 text-white hover:bg-green-600 hover:border-green-600" 
+                      : "bg-black text-white hover:bg-gray-800 border-black"
+                  }`}
                   onClick={handleDemoLogin}
                   disabled={isLoading}
                 >
-                  <LogIn size={16} />
-                  Use Demo Account
+                  {demoButtonSuccess ? (
+                    <CheckCircle size={16} />
+                  ) : (
+                    <LogIn size={16} />
+                  )}
+                  {demoButtonSuccess ? "Demo Credentials Applied" : "Use Demo Account"}
                 </Button>
               </CardContent>
               <CardFooter>
